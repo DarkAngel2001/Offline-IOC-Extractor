@@ -1,0 +1,107 @@
+{
+  "indicators": [
+    {
+      "column": 26,
+      "confidence": "low",
+      "context": "The suspicious host contacted hxxps://example.test/login and later [https://example.test/login](https://example.test/login).",
+      "flags": [
+        "documentation_domain"
+      ],
+      "line": 3,
+      "normalized_from": null,
+      "source_file": "samples/clean_report.txt",
+      "source_kind": "text",
+      "type": "domain",
+      "value": "example.test"
+    },
+    {
+      "column": 1,
+      "confidence": "low",
+      "context": "Analyst contact: [analyst@example.test](mailto:analyst@example.test)",
+      "flags": [],
+      "line": 10,
+      "normalized_from": null,
+      "source_file": "samples/clean_report.txt",
+      "source_kind": "text",
+      "type": "email",
+      "value": "analyst@example.test"
+    },
+    {
+      "column": 23,
+      "confidence": "low",
+      "context": "Observed IPv4 address: 192.0.2.10 Repeated address: 192.0.2.10",
+      "flags": [
+        "documentation_range"
+      ],
+      "line": 7,
+      "normalized_from": null,
+      "source_file": "samples/clean_report.txt",
+      "source_kind": "text",
+      "type": "ipv4",
+      "value": "192.0.2.10"
+    },
+    {
+      "column": 1,
+      "confidence": "low",
+      "context": "MD5: d41d8cd98f00b204e9800998ecf8427e",
+      "flags": [],
+      "line": 13,
+      "normalized_from": null,
+      "source_file": "samples/clean_report.txt",
+      "source_kind": "text",
+      "type": "md5",
+      "value": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "column": 1,
+      "confidence": "low",
+      "context": "SHA-1: da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "flags": [],
+      "line": 16,
+      "normalized_from": null,
+      "source_file": "samples/clean_report.txt",
+      "source_kind": "text",
+      "type": "sha1",
+      "value": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "column": 1,
+      "confidence": "low",
+      "context": "SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "flags": [],
+      "line": 19,
+      "normalized_from": null,
+      "source_file": "samples/clean_report.txt",
+      "source_kind": "text",
+      "type": "sha256",
+      "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "column": 72,
+      "confidence": "low",
+      "context": "The suspicious host contacted hxxps://example.test/login and later [https://example.test/login](https://example.test/login).",
+      "flags": [],
+      "line": 3,
+      "normalized_from": null,
+      "source_file": "samples/clean_report.txt",
+      "source_kind": "text",
+      "type": "url",
+      "value": "https://example.test/login"
+    }
+  ],
+  "summary": {
+    "by_confidence": {
+      "low": 7
+    },
+    "by_type": {
+      "domain": 1,
+      "email": 1,
+      "ipv4": 1,
+      "md5": 1,
+      "sha1": 1,
+      "sha256": 1,
+      "url": 1
+    },
+    "total": 7
+  }
+}

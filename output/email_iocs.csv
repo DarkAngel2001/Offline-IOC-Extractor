@@ -1,0 +1,6 @@
+value,type,confidence,source_file,source_kind,line,column,context,flags,normalized_from
+server.example.test,domain,low,samples\email_sample.eml,eml,9,43,"tem communicated with 198.51.100.99. Please verify if your endpoints contacted server.example.test or reviewed the report sent to incident-response@example.test. Regards, Securi",,
+incident-response@example.test,email,low,samples\email_sample.eml,eml,9,94,"if your endpoints contacted server.example.test or reviewed the report sent to incident-response@example.test. Regards, Security Operations",,
+operations@example.test,email,medium,samples\email_sample.eml,eml,3,1,"Security Alert: Observed Suspicious Indicator security-alerts@example.test operations@example.test Hello Team, We observed an indicator of compromise during our routine log revi",,
+security-alerts@example.test,email,medium,samples\email_sample.eml,eml,2,1,"Security Alert: Observed Suspicious Indicator security-alerts@example.test operations@example.test Hello Team, We observed an indicator of compromise dur",,
+198.51.100.99,ipv4,low,samples\email_sample.eml,eml,7,30,ator of compromise during our routine log review. The system communicated with 198.51.100.99. Please verify if your endpoints contacted server.example.test or reviewed the,documentation_range,

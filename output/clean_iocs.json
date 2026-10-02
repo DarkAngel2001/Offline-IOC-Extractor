@@ -1,0 +1,108 @@
+{
+  "indicators": [
+    {
+      "column": 1,
+      "confidence": "low",
+      "context": "bserved IPv4 address: 192.0.2.10 Repeated address: 192.0.2.10 Analyst contact: [analyst@example.test](mailto:analyst@example.test) MD5: d41d8cd98f00b204e9800998ecf8427e SHA-1: da39a3ee5e6b4b0d3255bfef95601890",
+      "flags": [
+        "appears_in_url"
+      ],
+      "line": 9,
+      "normalized_from": null,
+      "source_file": "samples\\clean_report.txt",
+      "source_kind": "text",
+      "type": "email",
+      "value": "analyst@example.test"
+    },
+    {
+      "column": 24,
+      "confidence": "low",
+      "context": "ttps://example.test/login](https://example.test/login). Observed IPv4 address: 192.0.2.10 Repeated address: 192.0.2.10 Analyst contact: [analyst@example.test](mailto:an",
+      "flags": [
+        "documentation_range",
+        "warninglist_match"
+      ],
+      "line": 5,
+      "normalized_from": null,
+      "source_file": "samples\\clean_report.txt",
+      "source_kind": "text",
+      "type": "ipv4",
+      "value": "192.0.2.10"
+    },
+    {
+      "column": 1,
+      "confidence": "low",
+      "context": ".10 Analyst contact: [analyst@example.test](mailto:analyst@example.test) MD5: d41d8cd98f00b204e9800998ecf8427e SHA-1: da39a3ee5e6b4b0d3255bfef95601890afd80709 SHA-256: e3b0c44298fc1c149afb",
+      "flags": [],
+      "line": 12,
+      "normalized_from": null,
+      "source_file": "samples\\clean_report.txt",
+      "source_kind": "text",
+      "type": "md5",
+      "value": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "column": 1,
+      "confidence": "low",
+      "context": "st](mailto:analyst@example.test) MD5: d41d8cd98f00b204e9800998ecf8427e SHA-1: da39a3ee5e6b4b0d3255bfef95601890afd80709 SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 Inv",
+      "flags": [],
+      "line": 15,
+      "normalized_from": null,
+      "source_file": "samples\\clean_report.txt",
+      "source_kind": "text",
+      "type": "sha1",
+      "value": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "column": 1,
+      "confidence": "medium",
+      "context": "b204e9800998ecf8427e SHA-1: da39a3ee5e6b4b0d3255bfef95601890afd80709 SHA-256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 Invalid IP to reject: 999.10.20.30",
+      "flags": [],
+      "line": 18,
+      "normalized_from": null,
+      "source_file": "samples\\clean_report.txt",
+      "source_kind": "text",
+      "type": "sha256",
+      "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "column": 68,
+      "confidence": "medium",
+      "context": "ng Exercise The suspicious host contacted hxxps://example.test/login and later [https://example.test/login](https://example.test/login). Observed IPv4 address: 192.0.2.10 Repeated address: 192.0.2.10 Analyst conta",
+      "flags": [],
+      "line": 3,
+      "normalized_from": null,
+      "source_file": "samples\\clean_report.txt",
+      "source_kind": "text",
+      "type": "url",
+      "value": "https://example.test/login"
+    },
+    {
+      "column": 69,
+      "confidence": "medium",
+      "context": "g Exercise The suspicious host contacted hxxps://example.test/login and later [https://example.test/login](https://example.test/login). Observed IPv4 address: 192.0.2.10 Repeated address: 192.0.2.10 Analyst contac",
+      "flags": [],
+      "line": 3,
+      "normalized_from": null,
+      "source_file": "samples\\clean_report.txt",
+      "source_kind": "text",
+      "type": "url",
+      "value": "https://example.test/login](https://example.test/login"
+    }
+  ],
+  "summary": {
+    "by_confidence": {
+      "low": 4,
+      "medium": 3
+    },
+    "by_type": {
+      "email": 1,
+      "ipv4": 1,
+      "md5": 1,
+      "sha1": 1,
+      "sha256": 1,
+      "url": 2
+    },
+    "total": 7
+  }
+}

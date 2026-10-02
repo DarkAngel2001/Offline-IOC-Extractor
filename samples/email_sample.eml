@@ -1,0 +1,14 @@
+From: security-alerts@example.test
+To: operations@example.test
+Subject: Security Alert: Observed Suspicious Indicator
+Content-Type: text/plain; charset="utf-8"
+
+Hello Team,
+
+We observed an indicator of compromise during our routine log review. 
+The system communicated with 198.51.100.99.
+
+Please verify if your endpoints contacted server.example.test or reviewed the report sent to incident-response@example.test.
+
+Regards,
+Security Operations

@@ -1,0 +1,20 @@
+Incident Report: Training Exercise
+
+The suspicious host contacted hxxps://example.test/login and later [https://example.test/login](https://example.test/login).
+
+Observed IPv4 address: 192.0.2.10
+Repeated address: 192.0.2.10
+
+Analyst contact:
+[analyst@example.test](mailto:analyst@example.test)
+
+MD5:
+d41d8cd98f00b204e9800998ecf8427e
+
+SHA-1:
+da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+SHA-256:
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+Invalid IP to reject: 999.10.20.30

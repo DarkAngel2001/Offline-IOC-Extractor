@@ -1,0 +1,78 @@
+{
+  "indicators": [
+    {
+      "column": 43,
+      "confidence": "low",
+      "context": "tem communicated with 198.51.100.99. Please verify if your endpoints contacted server.example.test or reviewed the report sent to incident-response@example.test. Regards, Securi",
+      "flags": [],
+      "line": 9,
+      "normalized_from": null,
+      "source_file": "samples\\email_sample.eml",
+      "source_kind": "eml",
+      "type": "domain",
+      "value": "server.example.test"
+    },
+    {
+      "column": 94,
+      "confidence": "low",
+      "context": "if your endpoints contacted server.example.test or reviewed the report sent to incident-response@example.test. Regards, Security Operations",
+      "flags": [],
+      "line": 9,
+      "normalized_from": null,
+      "source_file": "samples\\email_sample.eml",
+      "source_kind": "eml",
+      "type": "email",
+      "value": "incident-response@example.test"
+    },
+    {
+      "column": 1,
+      "confidence": "medium",
+      "context": "Security Alert: Observed Suspicious Indicator security-alerts@example.test operations@example.test Hello Team, We observed an indicator of compromise during our routine log revi",
+      "flags": [],
+      "line": 3,
+      "normalized_from": null,
+      "source_file": "samples\\email_sample.eml",
+      "source_kind": "eml",
+      "type": "email",
+      "value": "operations@example.test"
+    },
+    {
+      "column": 1,
+      "confidence": "medium",
+      "context": "Security Alert: Observed Suspicious Indicator security-alerts@example.test operations@example.test Hello Team, We observed an indicator of compromise dur",
+      "flags": [],
+      "line": 2,
+      "normalized_from": null,
+      "source_file": "samples\\email_sample.eml",
+      "source_kind": "eml",
+      "type": "email",
+      "value": "security-alerts@example.test"
+    },
+    {
+      "column": 30,
+      "confidence": "low",
+      "context": "ator of compromise during our routine log review. The system communicated with 198.51.100.99. Please verify if your endpoints contacted server.example.test or reviewed the",
+      "flags": [
+        "documentation_range"
+      ],
+      "line": 7,
+      "normalized_from": null,
+      "source_file": "samples\\email_sample.eml",
+      "source_kind": "eml",
+      "type": "ipv4",
+      "value": "198.51.100.99"
+    }
+  ],
+  "summary": {
+    "by_confidence": {
+      "low": 3,
+      "medium": 2
+    },
+    "by_type": {
+      "domain": 1,
+      "email": 3,
+      "ipv4": 1
+    },
+    "total": 5
+  }
+}

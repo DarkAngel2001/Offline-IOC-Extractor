@@ -1,0 +1,93 @@
+{
+  "indicators": [
+    {
+      "column": 81,
+      "confidence": "low",
+      "context": "2026-09-30 10:15:22 [INFO] Connection established from 198.51.100.45 to service auth-node.example.org. 2026-09-30 10:15:25 [WARN] Failed login attempt using user admin@example.org f",
+      "flags": [],
+      "line": 1,
+      "normalized_from": null,
+      "source_file": "samples\\messy_log.log",
+      "source_kind": "text",
+      "type": "domain",
+      "value": "auth-node.example.org"
+    },
+    {
+      "column": 60,
+      "confidence": "medium",
+      "context": "th-node.example.org. 2026-09-30 10:15:25 [WARN] Failed login attempt using user admin@example.org from IP 203.0.113.88. 2026-09-30 10:16:01 [ERROR] Payload download requested fr",
+      "flags": [],
+      "line": 2,
+      "normalized_from": null,
+      "source_file": "samples\\messy_log.log",
+      "source_kind": "text",
+      "type": "email",
+      "value": "admin@example.org"
+    },
+    {
+      "column": 64,
+      "confidence": "medium",
+      "context": "11017c592 (MD5). 2026-09-30 10:16:05 [INFO] Session terminated cleanly. Version 1.2.3.4 running.",
+      "flags": [],
+      "line": 5,
+      "normalized_from": null,
+      "source_file": "samples\\messy_log.log",
+      "source_kind": "text",
+      "type": "ipv4",
+      "value": "1.2.3.4"
+    },
+    {
+      "column": 56,
+      "confidence": "low",
+      "context": "2026-09-30 10:15:22 [INFO] Connection established from 198.51.100.45 to service auth-node.example.org. 2026-09-30 10:15:25 [WARN] Failed login attem",
+      "flags": [
+        "documentation_range"
+      ],
+      "line": 1,
+      "normalized_from": null,
+      "source_file": "samples\\messy_log.log",
+      "source_kind": "text",
+      "type": "ipv4",
+      "value": "198.51.100.45"
+    },
+    {
+      "column": 86,
+      "confidence": "low",
+      "context": "09-30 10:15:25 [WARN] Failed login attempt using user admin@example.org from IP 203.0.113.88. 2026-09-30 10:16:01 [ERROR] Payload download requested from hxxp://malicious-t",
+      "flags": [
+        "documentation_range"
+      ],
+      "line": 2,
+      "normalized_from": null,
+      "source_file": "samples\\messy_log.log",
+      "source_kind": "text",
+      "type": "ipv4",
+      "value": "203.0.113.88"
+    },
+    {
+      "column": 49,
+      "confidence": "medium",
+      "context": "test[.]example.net/payload.exe. 2026-09-30 10:16:02 [DEBUG] File hash computed: 5d41402abc4b2a76b9719d911017c592 (MD5). 2026-09-30 10:16:05 [INFO] Session terminated cleanly. Version 1.2.3.4 r",
+      "flags": [],
+      "line": 4,
+      "normalized_from": null,
+      "source_file": "samples\\messy_log.log",
+      "source_kind": "text",
+      "type": "md5",
+      "value": "5d41402abc4b2a76b9719d911017c592"
+    }
+  ],
+  "summary": {
+    "by_confidence": {
+      "low": 3,
+      "medium": 3
+    },
+    "by_type": {
+      "domain": 1,
+      "email": 1,
+      "ipv4": 3,
+      "md5": 1
+    },
+    "total": 6
+  }
+}
